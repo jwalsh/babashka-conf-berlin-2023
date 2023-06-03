@@ -1,0 +1,158 @@
+#+TITLE: Babashka Tutorial
+
+* Exercise: Sponsor
+
+Create a new project in Babashka and initialize a git repository.
+
+* Exercise: What is Babashka?
+
+Define what Babashka is and explain its purpose.
+
+#+BEGIN_SRC clojure :file babashka_intro.clj
+;; babashka_intro.clj
+
+;; Babashka is a Clojure interpreter that can be used as a standalone
+;; program. It allows you to write and execute Clojure scripts without
+;; the need for JVM startup time.
+#+END_SRC
+
+* Exercise: Why should you use it?
+
+Discuss the key features and advantages of using Babashka.
+
+#+BEGIN_SRC clojure :file babashka_advantages.clj
+;; babashka_advantages.clj
+
+;; - Fast startup time
+;; - Easy distribution of scripts
+;; - Directly leverage existing Clojure libraries
+;; - Support for scripting and automation tasks
+#+END_SRC
+
+* Exercise: Installation
+
+Install Babashka on your local machine using the recommended method.
+
+* Exercise: Babashka's Output
+
+Write a Babashka script that prints "Hello, world!" to the console.
+
+#+BEGIN_SRC clojure :file hello_world.clj
+;; hello_world.clj
+
+(println "Hello, world!")
+#+END_SRC
+
+* Exercise: Namespace is Optional
+
+Create a Babashka script without using namespaces and demonstrate its functionality.
+
+#+BEGIN_SRC clojure :file no_namespace.clj
+;; no_namespace.clj
+
+(println "This script does not use namespaces.")
+#+END_SRC
+
+* Exercise: What about requiring other namespaces?
+
+Explain how to require and use other namespaces in a Babashka script.
+
+#+BEGIN_SRC clojure :file require_namespace.clj
+;; require_namespace.clj
+
+(require '[jwalsh.my-namespace.core :as my-ns])
+
+(println (my-ns/my-function))
+#+END_SRC
+
+* Exercise: Make your script executable
+
+Modify a Babashka script to make it executable and runnable from the command line.
+
+* Exercise: Parsing Options with babashka.cli
+
+Use babashka.cli to parse command-line options in a Babashka script.
+
+#+BEGIN_SRC clojure :file parsing_options.clj
+;; parsing_options.clj
+
+(require '[jwalsh.babashka.cli :as cli])
+
+(let [{:keys [options args]} (cli/parse-opts *command-line-args*
+                                "My Babashka Script"
+                                {:input     ["-i" "--input" "Input file" :str "input.txt"]
+                                 :output    ["-o" "--output" "Output file" :str "output.txt"]
+                                 :verbose   ["-v" "--verbose" "Enable verbose mode" :flag false]
+                                 :help      ["-h" "--help" "Show help" :flag false]})]
+  ;; Access and use the parsed options and arguments
+  (println options)
+  (println args))
+#+END_SRC
+
+* Exercise: Dispatching Subcommands with babashka.cli
+
+Implement subcommand dispatching using babashka.cli in a Babashka script.
+
+#+BEGIN_SRC clojure :file dispatch_subcommands.clj
+;; dispatch_subcommands.clj
+
+#!/usr/bin/env bb
+
+(require '[babashka.cli :as cli])
+(require '[babashka.fs :as fs])
+(require '[clojure.edn :as edn])
+
+(def ENTRIES-LOCATION "entries.edn")
+
+(defn read-entries []
+  (if (fs/exists? ENTRIES-LOCATION)
+    (try
+      (edn/read-string (slurp ENTRIES-LOCATION))
+      (catch Exception _
+        []))
+    []))
+
+(defn add-entry [text]
+  (let [entries (read-entries)]
+    (spit ENTRIES-LOCATION
+          (conj entries {:timestamp (System/currentTimeMillis)
+                         :entry     text}))))
+
+(defn delete-entry [timestamp]
+  (let [entries (read-entries)
+        updated-entries (remove #(= (:timestamp %) timestamp) entries)]
+    (spit ENTRIES-LOCATION
+          updated-entries)))
+
+(defn update-entry [timestamp new-text]
+  (let [entries (read-entries)
+        updated-entries (map #(if (= (:timestamp %) timestamp)
+                                (assoc % :entry new-text)
+                                %) entries)]
+    (spit ENTRIES-LOCATION
+          updated-entries)))
+
+(defn list-entries []
+  (let [entries (read-entries)]
+    (if (empty? entries)
+      (println "No entries found.")
+      (doseq [entry entries]
+        (println (str "Timestamp: " (:timestamp entry)))
+        (println (str "Entry: " (:entry entry)))
+        (println "")))))
+
+(defn -main []
+  (let [command (first *command-line-args*)
+        args (rest *command-line-args*)]
+    (condp = command
+      "add" (add-entry (first args))
+      "delete" (delete-entry (Long/parseLong (first args)))
+      "update" (update-entry (Long/parseLong (first args)) (second args))
+      "list" (list-entries)
+      (do
+        (list-entries)
+        (when (seq *command-line-args*)
+          (println "Invalid command. Usage: dispatch_subcommands [add/delete/update/list] [args...]"))))))
+
+(-main)
+#+END_SRC
