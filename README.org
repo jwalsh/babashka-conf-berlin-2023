@@ -1,0 +1,43 @@
+#+BEGIN_SRC org
+* Babashka Conference Overview
+
+
+- https://babashka.org/conf/
+
+** 1st Babashka Conference in Berlin
+
+** Date: 10th June 2023
+
+*** Schedule
+
+Saturday, 10th June 2023
+
+#+BEGIN_CENTER
+|----------------------+------------------------------------+-----|
+|       Time           |               Topic                | Dur |
+|----------------------+------------------------------------+-----|
+| 9:00                 | Doors Open                         |     |
+| 9:30                 | Welcome                            |     |
+| 9:40                 | Clojure on SCIs                    |  40 |
+| 10:20                | Break                              |     |
+| 10:40                | Portuguese Driving Schools and bb  |  30 |
+| 11:20                | SCI for Science                    |  30 |
+| 11:50                | Lunch (we'll go out, bring cash)   |     |
+| 13:30                | Lightning Talks                    |  30 |
+| 14:10                | Do or do not Clojure               |  30 |
+| 14:50                | Don't forget the REPL              |  30 |
+| 15:20                | Break                              |  20 |
+| 15:40                | Birds of Feather                   |  50 |
+| 16:40                | Build Your Own Little Memex        |  30 |
+| 17:20                | Growing An Ecosystem               |  40 |
+|----------------------+------------------------------------+-----|
+#+END_CENTER
+
+* Topics for Review
+
+During the conference, we will cover a wide range of topics related to Babashka and its ecosystem. Some suggested code-related topics for review and discussion include:
+
+** Releng Examples
+   Explore real-world release engineering examples with Babashka.
+
+
