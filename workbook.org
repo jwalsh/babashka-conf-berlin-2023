@@ -135,7 +135,8 @@ done
 
 [ME]: 
 #+end_ai
-[[file:/Users/jasonwalsh/org/org-ai-images/20230609_256x256_image_13.png]]
+
+[[file:/Users/jasonwalsh/org/org-ai-images/20230609_256x256_image_13.png]]g
 
 - Grant Wood
 - Juan Gris
@@ -152,3 +153,13 @@ In the style of Cubist, two people on a train from Paris to Berlin, seated acros
 [[file:/Users/jasonwalsh/org/org-ai-images/20230609_256x256_image_9.png]]
 [[file:/Users/jasonwalsh/org/org-ai-images/20230609_256x256_image_8.png]]
 [[file:/Users/jasonwalsh/org/org-ai-images/20230609_256x256_image_7.png]]
+
+
+
+
+#+begin_ai
+Summarize the following then suggest additional prompts for training sessions associated with each of the sessions: 
+
+
+
+#+end_ai
