@@ -69,14 +69,21 @@ Explain how to require and use other namespaces in a Babashka script.
 
 Modify a Babashka script to make it executable and runnable from the command line.
 
+
+#+begin_src sh
+  chmod +x require_namespace.clj
+#+end_src
+
 * Exercise: Parsing Options with babashka.cli
 
 Use babashka.cli to parse command-line options in a Babashka script.
 
 #+BEGIN_SRC clojure :file parsing_options.clj
+#!/usr/bin/env bb
+
 ;; parsing_options.clj
 
-(require '[jwalsh.babashka.cli :as cli])
+(require '[babashka.cli :as cli])
 
 (let [{:keys [options args]} (cli/parse-opts *command-line-args*
                                 "My Babashka Script"
@@ -94,9 +101,9 @@ Use babashka.cli to parse command-line options in a Babashka script.
 Implement subcommand dispatching using babashka.cli in a Babashka script.
 
 #+BEGIN_SRC clojure :file dispatch_subcommands.clj
-;; dispatch_subcommands.clj
-
 #!/usr/bin/env bb
+
+;; dispatch_subcommands.clj
 
 (require '[babashka.cli :as cli])
 (require '[babashka.fs :as fs])

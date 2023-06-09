@@ -1,6 +1,5 @@
 * Babashka Conference Overview
 
-
 - https://babashka.org/conf/
 
 ** 1st Babashka Conference in Berlin
@@ -37,6 +36,16 @@ Saturday, 10th June 2023
 During the conference, we will cover a wide range of topics related to Babashka and its ecosystem. Some suggested code-related topics for review and discussion include:
 
 ** Releng Examples
+
    Explore real-world release engineering examples with Babashka.
 
+** Journal 
 
+** Cookbooks
+
+* Alternatives 
+
+- https://github.com/shadawck/awesome-cli-frameworks
+- https://click.palletsprojects.com/en/8.1.x/
+- https://hexdocs.pm/owl/readme.html
+- https://cli.urfave.org/
