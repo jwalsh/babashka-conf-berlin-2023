@@ -167,16 +167,341 @@ usage: date [-jnRu] [-I[date|hours|minutes|seconds]] [-f input_fmt]
 ./_.sh: line 23: -build-your-own-little-memex-30-/README.org: No such file or directory
 ./_.sh: line 24: -build-your-own-little-memex-30-/README.org: No such file or directory
 
+
+[AI]: As an AI language model, I cannot directly access your computer or files to analyze the issue, but it seems like the file -build-your-own-little-memex-30-/README.org may not exist in the specified directory path. The date command is also showing an error due to an illegal option. Please double-check the file path and command syntax to resolve the issue.
+
+[ME]: Suggest what might be causing these issues and address on OSX assuming brew is installaed 
+
+[AI]: The first issue with the missing file may be due to incorrect file permissions or a typo in the file path provided in the script. Please double-check the path to ensure that it is correct and that the file exists in the specified directory.
+
+The second issue with the date command may be due to the version of date command in the OSX system. You can try to install the GNU version of date using homebrew by running the following command:
+
+```
+brew install coreutils
+```
+
+This will install the GNU coreutils package, which includes the GNU version of date command with more features and options.
+
+Once installed, you can use the `gdate` command instead of `date` in the script to ensure compatibility with the GNU version of date.
+
+To address the missing file issue, you can also try changing the directory to the specified directory before running the script using the `cd` command:
+
+```
+cd /path/to/directory/
+./_.sh
+```
+
+This will ensure that the script is executed in the correct directory and can access the necessary files.
+
+[ME]: Is there anything that could be missing with the version of the date utility sinatalled 
+
+[AI]: The version of the `date` command installed on OSX may be missing certain options or features that are available in the GNU version. For example, some common options like `-d` and `-r` may not be available in the OSX version.
+
+This may cause compatibility issues with scripts or programs that rely on specific date options or formatting.
+
+The GNU version of `date` includes additional options and formatting abilities that allow for greater customization and flexibility when working with dates and times.
+
+If you are running into compatibility issues with a script or program, you may want to consider installing the GNU version of `date` using homebrew and using the `gdate` command instead to ensure compatibility.
+
+[ME]: 
 #+end_ai
 
+#+begin_src sh
+lynx -dump https://babashka.org/conf/schedule
+#+end_src
 
-
+#+RESULTS:
 
 #+begin_ai
 Summarize the following then suggest additional prompts for training sessions associated with each of the sessions: 
 
+[1] Babashka Logo
+
+   [2]Tickets[3]Schedule[4]T-shirt[5]Venue[6] [slack.svg] [7][twitter.svg]
+
+Schedule
+     __________________________________________________________________
+
+  Friday, 9th June 2023
+
+   19:00 Pre-conference beers at Alte Turnhalle, Holteistraﬂe 6-9, 10245
+   Berlin
+
+  Saturday, 10th June 2023
+
+   9:00 Doors open
+   9:30 Welcome
+   9:40 Clojure on SCIs (Opening Keynote)
+   Malcolm Sparks
+   40 minAbstract
+
+   In the past few years I've been developing a secure durable
+   programmable system, called Site. The language of this system is SCI,
+   the small-clojure-interpreter that powers babashka. In this talk I'll
+   explain some of the notable features and benefits of this system, for
+   example, how state updates are made by submitting database transactions
+   (to XTDB) written as SCI code. I'll explain why I chose SCI and some of
+   the reasons SCI makes a perfect scripting language to embed in a
+   JVM-based application, providing some tips along the way to others who
+   want to try using SCI in this way.
+   Bio
+
+   Malcolm is a Clojure developer with a keen interest in software
+   architecture and API security. He is the co-founder and CTO of JUXT, a
+   Clojure consulting firm.
+   10:20 JoeJoeBreakJoeJoe
+   10:40 Portuguese Driving Schools and Babashka
+   Flavio Sousa
+   30 minAbstract
+
+   In this talk, I'll show how Babashka is powering a no-frills
+   not-for-profit initiative attempting to bring a much-needed layer of
+   transparency to a traditional business, deemed too unsexy to disrupt.
+   I'll explain how Babashka brings Clojure and sanity to the messy
+   realities of web and PDF scraping and how it enables a low budget and
+   performant "serverless" solution, reminiscent of simpler times in web
+   development. Join me for a potpourri of state bureaucracy, freedom of
+   information acts, incomprehensible stubbornness and low budget
+   solutions that steer away from big tech.
+   Bio
+
+   Flavio received a Master's in mechanical engineering from the
+   University of Lisbon in 2010, where he worked for a Fluid Simulation
+   Lab and published a couple of research papers. In 2013, he joined the
+   booming Lisbon startup scene and fell in love with software
+   development. Went to London in 2015 and has been working with Clojure
+   pretty much ever since. Flavio's favorite book is Gˆdel, Escher, Bach,
+   which made me realize just how amazing it is that we can actually use
+   human language to tell machines what to do. Competed in Brazilian Jiu
+   Jitsu until an injury put a stop to that, so now he just dances
+   Brazilian ForrÛ on the weekends.
+   11:20 SCI for Science
+   Daniel Slutsky
+   30 minAbstract
+
+   Scientific computing workflows typically require a balance between
+   dynamic playfulness and stable reproducibility. One way to seek such
+   balance is the "namespace as a notebook" approach: enjoying the
+   playfulness of the Clojure editor and REPL in a self-documenting
+   fashion, generating a document as a side-effect. This has been
+   manifested in different ways through the evolution of tools such as Oz,
+   Notespace, Clerk, and Clay. Of all the above, Clay intentionally tries
+   to be the least clever, offering a minimalistic approach targeting
+   documents such as HTML files, Quarto pages, and reveal.js
+   presentations. These documents can include interactive widgets and
+   access various data visualization libraries using SCI (through
+   Scittle). In this talk, we will explore a real-world data-science
+   problem using Clay, focusing on usability and the desired workflow. Our
+   perspective will be the Scicloj journey to make Clojure a friendly
+   option for people tackling data and science problems. We will discuss
+   the role of SCI in the solution, as well as some of the technical and
+   conceptual challenges on that path. Basic knowledge of Clojure will be
+   assumed.
+   Bio
+
+   Daniel Slutsky is a mathematician and a data scientist who has been
+   using Clojure since 2013. In his professional path, Daniel has
+   primarily worked in data science and backend teams at startups,
+   addressing diverse topics such as time-series analysis, recommendation
+   systems, geospatial analysis, and NLP. His MSc thesis was in pure math
+   around topics of probability theory. Daniel is a community organizer at
+   the Scicloj community, building a Clojure stack for data science and
+   running various Clojure study groups and dev groups. His approach
+   towards community building and teaching is drawn from his experience as
+   a community organizer in various local activist groups and his yoga
+   instructor training. He has been co-maintaining several Clojure
+   open-source projects, particularly Clojisr, Notespace, Kindly, and
+   Clay.
+   11:50 Lunch (we'll go out, bring cash)
+   13:30 !V!!V!Lightning talks!V!!V!
+   sign up on the day - 5 min each
+   30 min
+   14:10 Do or Do Not Clojure
+   Gert Goet
+   30 minAbstract
+
+   When was the last time you ran into a new library and thought: "If only
+   I could give it a spin real quick..."? It's this friction that deps-try
+   tries to remove. And it shouldn't matter whether the thing you want to
+   try is a published library, a git-repository, a local project or just
+   Clojure itself: you'll spin up a rebel-readline powered REPL just as
+   easily. In this talk you'll learn all about deps-try, how it aims to
+   make Clojure more accessible to newcomers and how Babashka makes it all
+   tick.
+   Bio
+
+   Gert is an independent consultant with over 15 years of experience
+   building backends and tooling. While currently being on the lookout for
+   a new Clojure project (are you using Clojure to improve the world?
+   Let's talk!), he's co-organising the Aarhus Clojure-meetup, maintaining
+   the Clojure event calendar, learning Danish and writing open-source
+   software. Currently his focus is on deps-try, a CLI-tool that aims to
+   make it convenient to explore Clojure (or any library) from the REPL.
+   14:50 Don't Forget the REPL
+   Martin Kavalar
+   30 minAbstract
+
+   Babashka's instant startup time makes it a great choice for scripting.
+   This can make it tempting to iterate by re-running scripts. This talk
+   is a reminder that Babashka has good support for interactive
+   development with the REPL. We'll explore when you should consider
+   reaching for the REPL. We hope you'll learn a few tricks about
+   REPL-driven development in general and in Babashka in particular.
+   Bio
+
+   Martin Kavalar is a co-founder at Nextjournal, a hybrid between startup
+   and research lab trying to improve programming. Nextjournal makes a
+   polyglot computational notebook with a focus on reproducibility and a
+   variety of open source tools, including Clerk, a programmer's assistant
+   for Clojure.
+   15:20 JoeJoeBreakJoeJoe
+   20 min
+   15:40 Birds of a Feather
+   50 min
+   Have fun and learn! We will break into smaller groups to discuss topics
+   of interest. Find out more at [8]What is a Birds of a Feather Session?
+   16:40 Build Your Own Little Memex with Babashka
+   Teodor Heggelund
+   30 minAbstract
+
+   A memex is a tool for information capture, information storage and
+   information retrieval. Memexes can be used to build theory, collect
+   research, or explore one's own taste. In this talk, we will explore the
+   history of memexes, how a memex can aid our learning process, and how
+   we can build our own little memex with Babashka.
+   Bio
+
+   Teodor builds analysis software for civil engineers from nine to five,
+   and likes to spend after hours thinking-out-loud about programming as
+   theory building, open source and collective knowledge management.
+   17:20 Growing an Ecosystem: Lessons Learned (Closing Keynote)
+   Michiel Borkent
+   40 minAbstract
+
+   In this talk, Michiel will take us on a journey through the babashka
+   ecosystem, how it evolved into what it currently is and the lessons he
+   learned along the way.
+   Bio
+
+   Michiel Borkent ( @borkdude ) is the author of babashka, clj-kondo,
+   SCI, cherry and several other Clojure projects. He has been using
+   Clojure since 2010 as a tinkerer, lecturer and professional software
+   developer. Since 2021 he dedicates most his time to open source Clojure
+   software. Hobbies include eating vegetables and walking.
+     __________________________________________________________________
+
+   Credits: initial site design by Alice Kile.
+
+References
+
+   1. https://babashka.org/conf/index.html
+   2. https://www.meetup.com/clojure-berlin/events/292998496/
+   3. https://babashka.org/conf/schedule.html
+   4. https://www.etsy.com/listing/1475981599/babashka-conf-berlin-2023-t-shirt
+   5. https://goo.gl/maps/9KHpcXevvvFJbe5M8
+   6. https://app.slack.com/client/T03RZGPFR/C04VAK5U86L
+   7. https://twitter.com/search?q=%23babashka%20OR%20babashka&src=typed_query&f=live
+   8. https://gist.github.com/pesterhazy/b0d1864c1118bfca9202ca06f65eb886
 
 
+[AI]: The Babashka Logo training session includes a conference schedule with various talks, presented by experts in the field of Clojure. The schedule includes keynote speakers, lightning talks, and Birds of a Feather sessions where small groups discuss topics of interest. The training session covers topics such as secure durable programmable systems, web and PDF scraping, self-documenting fashion, and interactive widgets. Additional prompts for training sessions associated with each of the sessions could be:
+
+1. Babashka Logo - Basics of Babashka Logo and its applications in Clojure development.
+2. Tickets - How to book tickets for Babashka conferences and what to expect in terms of attendance.
+3. Schedule - Overview of the conference schedule and introduction to keynote speakers and their topics.
+4. T-Shirt - How to get official Babashka t-shirts and merchandise.
+5. Venue - Details about the venue of the conference and how to get there.
+6. Slack - Introduction to the Slack channel where attendees can interact with each other and engage in discussions.
+7. Twitter - How to use Twitter to stay updated on conference news, announcements, and to connect with fellow attendees.
+8. Pre-conference Beers - Socializing tips and how to network with other attendees before the start of the conference.
+9. Lightning Talks - Tips for presenting a successful lightning talk and how to book a slot for it.
+10. Do or Do Not Clojure - Introduction to deps-try and its role in making Clojure more accessible to newcomers.
+11. Birds of a Feather - Details about the Birds of a Feather sessions and how to participate in them.
+12. Build Your Own Little Memex with Babashka - Overview of memexes and their applications, along with a hands-on tutorial on building a memex with Babashka.
+13. Growing an Ecosystem - Lessons learned in growing a successful Clojure ecosystem and how attendees can contribute to its growth.
+
+[ME]: Summarize only the actual talks but not any of the meta about hte conference 
+
+[AI]: The Babashka Logo conference features a few talks, including:
+
+1. "Clojure on SCIs" by Malcolm Sparks, discussing the advantages of the secure durable programmable system "Site", which is powered by SCI - the small-clojure-interpreter that powers Babashka.
+2. "Portuguese Driving Schools and Babashka" by Flavio Sousa, which explores how Babashka is powering a low-budget, serverless solution to bring transparency to a traditional business.
+3. "SCI for Science" by Daniel Slutsky, discussing the role of SCI in seeking a balance between dynamic playfulness and stable reproducibility in scientific computing workflows.
+4. "Do or Do Not Clojure" by Gert Goet, exploring the "deps-try" CLI-tool and how it aims to make Clojure more accessible to newcomers.
+5. "Don't Forget the REPL" by Martin Kavalar, reminding attendees to use the REPL for interactive development, and sharing tricks about REPL-driven development in Babashka.
+6. "Build Your Own Little Memex with Babashka" by Teodor Heggelund, exploring the history and benefits of memexes and how to build a memex with Babashka.
+7. "Growing an Ecosystem: Lessons Learned" by Michiel Borkent, discussing the evolution of the Babashka ecosystem and the lessons learned along the way.
+
+[ME]: Format this for org mode in a manner that will make it easy to take notes, assume the sessions will be a second level header in the core notes of the conference 
+
+[AI]: * Babashka Logo
+
+** Schedule
+
+- Friday, 9th June 2023
+  - 19:00 Pre-conference beers at Alte Turnhalle, Holteistraﬂe 6-9, 10245 Berlin
+
+- Saturday, 10th June 2023
+  - 9:00 Doors open
+  - 9:30 Welcome
+  - 9:40 Clojure on SCIs (Opening Keynote)
+    - Malcolm Sparks
+    - 40 min
+    - Abstract: In the past few years I've been developing a secure durable programmable system, called Site. The language of this system is SCI, the small-clojure-interpreter that powers babashka. In this talk I'll explain some of the notable features and benefits of this system...
+    - Bio: Malcolm is a Clojure developer with a keen interest in software architecture and API security. He is the co-founder and CTO of JUXT, a Clojure consulting firm.
+  
+  - 10:20 JoeJoeBreakJoeJoe
+  
+  - 10:40 Portuguese Driving Schools and Babashka
+    - Flavio Sousa
+    - 30 min
+    - Abstract: In this talk, I'll show how Babashka is powering a no-frills not-for-profit initiative attempting to bring a much-needed layer of transparency to a traditional business...
+    - Bio: Flavio received a Master's in mechanical engineering from the University of Lisbon in 2010...
+
+  - 11:20 SCI for Science
+    - Daniel Slutsky
+    - 30 min
+    - Abstract: Scientific computing workflows typically require a balance between dynamic playfulness and stable reproducibility. One way to seek such balance is the "namespace as a notebook" approach...
+    - Bio: Daniel Slutsky is a mathematician and a data scientist who has been using Clojure since 2013...
+
+  - 11:50 Lunch (we'll go out, bring cash)
+  
+  - 13:30 !V!!V!Lightning talks!V!!V!
+    - sign up on the day - 5 min each
+    - 30 min
+  
+  - 14:10 Do or Do Not Clojure
+    - Gert Goet
+    - 30 min
+    - Abstract: When was the last time you ran into a new library and thought: "If only I could give it a spin real quick..."? It's this friction that deps-try tries to remove. And it shouldn't matter whether the thing you want to try is...
+    - Bio: Gert is an independent consultant with over 15 years of experience building backends and tooling...
+
+  - 14:50 Don't Forget the REPL
+    - Martin Kavalar
+    - 30 min
+    - Abstract: Babashka's instant startup time makes it a great choice for scripting. This can make it tempting to iterate by re-running scripts. This talk is a reminder that Babashka has good support for interactive development with the REPL...
+    - Bio: Martin Kavalar is a co-founder at Nextjournal, a hybrid between startup and research lab trying to improve programming.
+
+  - 15:20 JoeJoeBreakJoeJoe
+    - 20 min
+  
+  - 15:40 Birds of a Feather
+    - 50 min
+    - Have fun and learn! We will break into smaller groups to discuss topics of interest.
+
+  - 16:40 Build Your Own Little Memex with Babashka
+    - Teodor Heggelund
+    - 30 min
+    - Abstract: A memex is a tool for information capture, information storage and information retrieval. Memexes can be used to build theory, collect research, or explore one's own taste. In this talk, we will explore the history of memexes, how a memex can aid our learning process, and how we can build our own little memex with Babashka.
+    - Bio: Teodor builds analysis software for civil engineers from nine to five...
+
+  - 17:20 Growing an Ecosystem: Lessons Learned (Closing Keynote)
+    - Michiel Borkent
+    - 40 min
+    - Abstract: In this talk, Michiel will take us on a journey through the babashka ecosystem, how it evolved into what it currently is and the lessons he learned along the way.
+    - Bio: Michiel Borkent ( @borkdude ) is the author of babashka, clj-kondo, SCI, cherry and several other Clojure projects...
+
+[ME]: Use header blocks
 #+end_ai
 
 
