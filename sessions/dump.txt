@@ -1,0 +1,42 @@
+[?1049h[1;38r(B[m[4l[?7h[?1h=[39;49m[39;49m[37m[40m[H[2J[37m[40m[J(B[m[39;49m[37m[40m[37m[40m[J[39;49m(B[m[36d[93m[44mGetting https://babashka.org/conf/schedule[K[39;49m(B[m[93m[44mLooking up babashka.org[K[39;49m(B[m[93m[44mMaking HTTPS connection to babashka.org[39;49m(B[m[93m[44mSSL callback:ok, preverify_ok=1, ssl_okay=0[39;49m(B[m[93m[44mVerified connection to babashka.org (cert=babashka.org)[39;49m(B[m[93m[44mCertificate issued by: /C=US/O=Let's Encrypt/CN=R3[K[39;49m(B[m[93m[44mSecure 256-bit TLSv1.3 (TLS_AES_256_GCM_SHA384) HTTP connection[39;49m(B[m[3G[93m[44mnding HTTP request.[K[39;49m(B[m[93m[44mHTTP request sent; waiting for response.[39;49m(B[m[93m[44mRead 672 bytes of data, 839 bytes/sec.[K[39;49m(B[m[93m[44mHTTP/1.1 200 OK[K[39;49m(B[m[93m[44mData transfer complete[39;49m(B[m[1;121H[35m[40mbabashka-conf (p1 of 2)
+[33m[40m Babashka Logo
+
+[4G[32m[40mTicketsScheduleT-shirtVenue[33m[40m [slack.svg] [twitter.svg]
+
+[37m[40mSchedule
+[93m[40m__________________________________________________________________________________________________________________________________
+
+[3G[37m[40mFriday, 9th June 2023
+
+   19:00 Pre-conference beers at Alte Turnhalle, Holteistra  6-9, 10245 Berlin
+
+  Saturday, 10th June 2023
+
+   9:00 Doors open
+   9:30 Welcome
+   9:40 Clojure on SCIs (Opening Keynote)
+   Malcolm Sparks
+   40 minAbstract
+
+   In the past few years I've been developing a secure durable programmable system, called Site. The language of this system is SCI, the
+   small-clojure-interpreter that powers babashka. In this talk I'll explain some of the notable features and benefits of this system, for
+   example, how state updates are made by submitting database transactions (to XTDB) written as SCI code. I'll explain why I chose SCI and
+   some of the reasons SCI makes a perfect scripting language to embed in a JVM-based application, providing some tips along the way to
+   others who want to try using SCI in this way.
+   Bio
+
+Malcolm is a Clojure developer with a keen interest in software architecture and API security. He is the co-founder and CTO of JUXT, a
+   Clojure consulting firm.
+   10:20 JoeJoeBreakJoeJoe
+   10:40 Portuguese Driving Schools and Babashka
+   Flavio Sousa
+   30 minAbstract
+
+   In this talk, I'll show how Babashka is powering a no-frills not-for-profit initiative attempting to bring a much-needed layer of
+[39;49m(B[m[1;142H[35m[40m4[36d[39;49m(B[m
+[3G[37m[40mArrow keys: Up and Down to move.  Right to follow a link; Left to go back.
+ H)elp O)ptions P)rint G)o M)ain screen Q)uit /=search [delete]=history list [39;49m(B[m[36d[93m[44m-- press space for next page --[39;49m(B[m[H
+[C[93m[40mBabashka Logo[38;144H[39;49m(B[m[37m[40m[J[39;49m(B[m[38;1H[?1049l[?1l>
+
+Exiting via interrupt: 2
+
