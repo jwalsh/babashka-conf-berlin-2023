@@ -106,7 +106,7 @@ done
 
 [ME]: Ensure that the names of the direcotries are all lowercase and safe for all of the directories 
 
-[AI]: xd#!/bin/bash
+[AI]: #!/bin/bash
 
 # create an array of session topics
 topics=("Doors Open" "Welcome" "Clojure on SCIs" "Break" "Portuguese Driving Schools and bb" "SCI for Science" "Lunch" "Lightning Talks" "Do or do not Clojure" "Don't forget the REPL" "Break" "Birds of Feather" "Build Your Own Little Memex" "Growing An Ecosystem")
@@ -156,6 +156,21 @@ In the style of Cubist, two people on a train from Paris to Berlin, seated acros
 
 
 
+#+begin_ai
+
+./_.sh: line 21: -build-your-own-little-memex-30-/README.org: No such file or directory
+./_.sh: line 22: -build-your-own-little-memex-30-/README.org: No such file or directory
+date: illegal option -- d
+usage: date [-jnRu] [-I[date|hours|minutes|seconds]] [-f input_fmt]
+            [-r filename|seconds] [-v[+|-]val[y|m|w|d|H|M|S]]
+            [[[[mm]dd]HH]MM[[cc]yy][.SS] | new_date] [+output_fmt]
+./_.sh: line 23: -build-your-own-little-memex-30-/README.org: No such file or directory
+./_.sh: line 24: -build-your-own-little-memex-30-/README.org: No such file or directory
+
+#+end_ai
+
+
+
 
 #+begin_ai
 Summarize the following then suggest additional prompts for training sessions associated with each of the sessions: 
@@ -163,3 +178,6 @@ Summarize the following then suggest additional prompts for training sessions as
 
 
 #+end_ai
+
+
+
