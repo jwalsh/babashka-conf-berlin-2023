@@ -506,3 +506,57 @@ References
 
 
 
+* Topics 
+
+
+
+#+begin_ai
+For the following list provide it as lowercase and dash delimited:
+
+Babashka
+Conference
+Berlin
+Tech Event
+June 2023
+Clojure
+Self-contained executables
+Software development
+Functional programming
+Portuguese Driving Schools
+Scientific computing
+Lightning Talks
+REPL
+Software ecosystem
+Developer community
+Build Your Own Memex
+Software engineering
+Code development
+Software conference
+Developer event
+Berlin Conference
+
+[AI]: babashka-conference-berlin-tech-event-june-2023-clojure-self-contained-executables-software-development-functional-programming-portuguese-driving-schools-scientific-computing-lightning-talks-repl-software-ecosystem-developer-community-build-your-own-memex-software-engineering-code-development-software-conference-developer-event-berlin-conference
+
+[ME]: Produce a summary of what this conference should cover
+
+[AI]: The conference should cover various topics related to software development, software engineering, and software ecosystem. It should focus on functional programming and scientific computing and also provide lightning talks on new and emerging technologies like self-contained executables. The conference should provide a platform for the developer community to come together and discuss code development, build their own memex, and share their ideas on software development and software conferences. The conference should also include sessions on the REPL and cover topics related to Portuguese Driving Schools. The event is scheduled to take place in Berlin in June 2023.
+
+[ME]: Create five talks with title and summary
+
+[AI]: 1. Title: "The Power of Self-contained Executables in Software Development"
+Summary: This talk will examine the benefits of using self-contained executables and how they can help simplify the deployment process in software development. The talk will cover the basics of creating self-contained executables and how they can be used to distribute software to different platforms.
+
+2. Title: "Exploring the Functional Programming Paradigm"
+Summary: This talk will provide an introduction to the functional programming paradigm and explore how it differs from other programming paradigms. The talk will include examples showcasing the benefits of using functional programming and how it can make code more readable and maintainable.
+
+3. Title: "Creating a Memex: A Personal Knowledge Management System"
+Summary: This talk will examine the concept of a Memex and how it can be used as a personal knowledge management system. The talk will cover the basics of creating a Memex and tools that can be used to implement one. Attendees will learn how a Memex can help them store and organize information more efficiently.
+
+4. Title: "The Role of Scientific Computing in Software Development"
+Summary: This talk will explore the growing role of scientific computing in software development. Attendees will learn how scientific computing can be used to solve complex problems and make software more efficient. The talk will also cover some popular tools and languages used in scientific computing.
+
+5. Title: "Building a Strong Developer Community"
+Summary: This talk will provide tips and strategies for building a strong developer community. Attendees will learn how to attract and retain members, create engaging content, and provide value to the community. This talk will showcase examples of successful developer communities and what makes them special.
+
+[ME]: 
+#+end_ai
