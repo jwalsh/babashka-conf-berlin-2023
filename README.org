@@ -35,46 +35,47 @@ Saturday, 10th June 2023
 * Sessions 
 
 ** 9:40 Clojure on SCIs (Opening Keynote)
-    - Malcolm Sparks
-    - 40 min
-    - Abstract: In the past few years I've been developing a secure durable programmable system, called Site. The language of this system is SCI, the small-clojure-interpreter that powers babashka. In this talk I'll explain some of the notable features and benefits of this system...
-    - Bio: Malcolm is a Clojure developer with a keen interest in software architecture and API security. He is the co-founder and CTO of JUXT, a Clojure consulting firm.
+
+- Malcolm Sparks
+- 40 min
+- Abstract: In the past few years I've been developing a secure durable programmable system, called Site. The language of this system is SCI, the small-clojure-interpreter that powers babashka. In this talk I'll explain some of the notable features and benefits of this system...
+- Bio: Malcolm is a Clojure developer with a keen interest in software architecture and API security. He is the co-founder and CTO of JUXT, a Clojure consulting firm.
   
 ** 10:40 Portuguese Driving Schools and Babashka
-    - Flavio Sousa
-    - 30 min
-    - Abstract: In this talk, I'll show how Babashka is powering a no-frills not-for-profit initiative attempting to bring a much-needed layer of transparency to a traditional business...
-    - Bio: Flavio received a Master's in mechanical engineering from the University of Lisbon in 2010...
+- Flavio Sousa
+- 30 min
+- Abstract: In this talk, I'll show how Babashka is powering a no-frills not-for-profit initiative attempting to bring a much-needed layer of transparency to a traditional business...
+- Bio: Flavio received a Master's in mechanical engineering from the University of Lisbon in 2010...
 
 ** 11:20 SCI for Science
-    - Daniel Slutsky
-    - 30 min
-    - Abstract: Scientific computing workflows typically require a balance between dynamic playfulness and stable reproducibility. One way to seek such balance is the "namespace as a notebook" approach...
-    - Bio: Daniel Slutsky is a mathematician and a data scientist who has been using Clojure since 2013...
+- Daniel Slutsky
+- 30 min
+- Abstract: Scientific computing workflows typically require a balance between dynamic playfulness and stable reproducibility. One way to seek such balance is the "namespace as a notebook" approach...
+- Bio: Daniel Slutsky is a mathematician and a data scientist who has been using Clojure since 2013...
 
 ** 14:10 Do or Do Not Clojure
-    - Gert Goet
-    - 30 min
-    - Abstract: When was the last time you ran into a new library and thought: "If only I could give it a spin real quick..."? It's this friction that deps-try tries to remove. And it shouldn't matter whether the thing you want to try is...
-    - Bio: Gert is an independent consultant with over 15 years of experience building backends and tooling...
+- Gert Goet
+- 30 min
+- Abstract: When was the last time you ran into a new library and thought: "If only I could give it a spin real quick..."? It's this friction that deps-try tries to remove. And it shouldn't matter whether the thing you want to try is...
+- Bio: Gert is an independent consultant with over 15 years of experience building backends and tooling...
 
 ** 14:50 Don't Forget the REPL
-    - Martin Kavalar
-    - 30 min
-    - Abstract: Babashka's instant startup time makes it a great choice for scripting. This can make it tempting to iterate by re-running scripts. This talk is a reminder that Babashka has good support for interactive development with the REPL...
-    - Bio: Martin Kavalar is a co-founder at Nextjournal, a hybrid between startup and research lab trying to improve programming.
+- Martin Kavalar
+- 30 min
+- Abstract: Babashka's instant startup time makes it a great choice for scripting. This can make it tempting to iterate by re-running scripts. This talk is a reminder that Babashka has good support for interactive development with the REPL...
+- Bio: Martin Kavalar is a co-founder at Nextjournal, a hybrid between startup and research lab trying to improve programming.
 
 ** 16:40 Build Your Own Little Memex with Babashka
-    - Teodor Heggelund
-    - 30 min
-    - Abstract: A memex is a tool for information capture, information storage and information retrieval. Memexes can be used to build theory, collect research, or explore one's own taste. In this talk, we will explore the history of memexes, how a memex can aid our learning process, and how we can build our own little memex with Babashka.
-    - Bio: Teodor builds analysis software for civil engineers from nine to five...
+- Teodor Heggelund
+- 30 min
+- Abstract: A memex is a tool for information capture, information storage and information retrieval. Memexes can be used to build theory, collect research, or explore one's own taste. In this talk, we will explore the history of memexes, how a memex can aid our learning process, and how we can build our own little memex with Babashka.
+- Bio: Teodor builds analysis software for civil engineers from nine to five...
 
 ** 17:20 Growing an Ecosystem: Lessons Learned (Closing Keynote)
-    - Michiel Borkent
-    - 40 min
-    - Abstract: In this talk, Michiel will take us on a journey through the babashka ecosystem, how it evolved into what it currently is and the lessons he learned along the way.
-    - Bio: Michiel Borkent ( @borkdude ) is the author of babashka, clj-kondo, SCI, cherry and several other Clojure projects...
+- Michiel Borkent
+- 40 min
+- Abstract: In this talk, Michiel will take us on a journey through the babashka ecosystem, how it evolved into what it currently is and the lessons he learned along the way.
+- Bio: Michiel Borkent ( @borkdude ) is the author of babashka, clj-kondo, SCI, cherry and several other Clojure projects...
 
 * Topics for Review
 
